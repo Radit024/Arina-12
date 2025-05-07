@@ -69,7 +69,7 @@ export function MainLayout({
             </Button>
           )}
           <h1 className="text-xl font-heading font-semibold text-primary hidden md:block">
-            Agricultural Intelligence Platform
+            ArinaAI
           </h1>
           <div className="ml-auto flex items-center space-x-4">
             <Button variant="outline" size="icon" className="rounded-full">
@@ -80,65 +80,6 @@ export function MainLayout({
             </Button>
           </div>
         </header>
-        
-        {/* Quick Access Tools Bar */}
-        <div className="bg-white px-4 py-3 border-b border-gray-200 overflow-x-auto flex items-center space-x-2">
-          <span className="text-sm font-medium text-gray-600 whitespace-nowrap">Quick access:</span>
-          <Button 
-            variant="outline" 
-            size="sm" 
-            className="bg-cream hover:bg-cream-dark text-primary rounded-full text-sm flex items-center whitespace-nowrap"
-            onClick={() => openTool('businessFeasibility')}
-          >
-            <span className="mr-1.5">📊</span>
-            Feasibility
-          </Button>
-          <Button 
-            variant="outline" 
-            size="sm" 
-            className="bg-cream hover:bg-cream-dark text-primary rounded-full text-sm flex items-center whitespace-nowrap"
-            onClick={() => openTool('demandForecasting')}
-          >
-            <span className="mr-1.5">📈</span>
-            Forecasting
-          </Button>
-          <Button 
-            variant="outline" 
-            size="sm" 
-            className="bg-cream hover:bg-cream-dark text-primary rounded-full text-sm flex items-center whitespace-nowrap"
-            onClick={() => {
-              setActiveTool('optimizationAnalysis');
-              setShowRightPanel(true);
-            }}
-          >
-            <span className="mr-1.5">💰</span>
-            Profit Max
-          </Button>
-          <Button 
-            variant="outline" 
-            size="sm" 
-            className="bg-cream hover:bg-cream-dark text-primary rounded-full text-sm flex items-center whitespace-nowrap"
-            onClick={() => {
-              setActiveTool('optimizationAnalysis');
-              setShowRightPanel(true);
-            }}
-          >
-            <span className="mr-1.5">📉</span>
-            Cost Min
-          </Button>
-          <Button 
-            variant="outline" 
-            size="sm" 
-            className="bg-cream hover:bg-cream-dark text-primary rounded-full text-sm flex items-center whitespace-nowrap"
-            onClick={() => {
-              setActiveTool('optimizationAnalysis');
-              setShowRightPanel(true);
-            }}
-          >
-            <span className="mr-1.5">🎯</span>
-            Goal Programming
-          </Button>
-        </div>
         
         {/* Main Chat + Tools Area */}
         <div className="flex-1 flex overflow-hidden">
